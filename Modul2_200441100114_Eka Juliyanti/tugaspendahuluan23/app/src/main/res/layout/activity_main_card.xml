@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:orientation="horizontal"
+    android:id="@+id/container">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:adjustViewBounds="true"
+        tools:src="@drawable/bxl_android"></ImageView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp">
+        <TextView
+            android:id="@+id/textName"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:text="Pokemon"
+            android:textSize="20dp"
+            android:textAlignment="center"></TextView>
+        <TextView
+            android:id="@+id/textHalo"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:text="Halo"
+            android:textSize="20dp"
+            android:textAlignment="center"></TextView>
+    </LinearLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
