@@ -5,13 +5,10 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
-
 class MainActivity : AppCompatActivity(), View.OnClickListener {
-
     private lateinit var btnIntent1: Button
     private lateinit var btnIntent2: Button
     private lateinit var btnIntent3: Button
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -40,5 +37,4 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             }
         }
     }
-
 }

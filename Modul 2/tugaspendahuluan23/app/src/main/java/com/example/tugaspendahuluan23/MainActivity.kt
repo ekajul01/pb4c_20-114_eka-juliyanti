@@ -13,7 +13,6 @@ class MainActivity : AppCompatActivity() {
 
         cardAdapter()
     }
-
     private fun cardAdapter(){
         val cards = listOf<CardModel>(
             CardModel(1,"Eka", R.drawable.bxl_android),

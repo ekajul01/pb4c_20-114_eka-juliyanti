@@ -1,12 +1,9 @@
 package com.example.tugaspendahuluan22
-
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.*
-
 class MainActivity : AppCompatActivity() {
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -31,7 +28,6 @@ class MainActivity : AppCompatActivity() {
             } else {
                 gender = " "
             }
-
             val tampil = "Nama: "+editTextNama.getText()+
                     ", Gender: " +gender+
                     " telah berhasil disimpan"
@@ -45,9 +41,7 @@ class MainActivity : AppCompatActivity() {
             cbReading.isChecked = false
             cbTravelling.isChecked = false
         }
-
     }
-
     fun printHobi(view: View) {
         val checkBox = view as CheckBox
         val hobi = checkBox.text.toString()

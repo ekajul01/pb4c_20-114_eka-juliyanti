@@ -1,5 +1,4 @@
 package com.example.tugaspraktikum21
-
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -7,7 +6,6 @@ import android.widget.LinearLayout
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-
 class MainActivity : AppCompatActivity() {
 
     private lateinit var recyclerView: RecyclerView
@@ -45,7 +43,6 @@ class MainActivity : AppCompatActivity() {
             intent.putExtra("member", it)
 
             startActivity(intent)
-
         }
     }
 }

@@ -2,7 +2,6 @@ package com.example.tugaspendahuluan21
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.EditText
 import android.widget.TextView
 
 class Detail2Activity : AppCompatActivity() {
