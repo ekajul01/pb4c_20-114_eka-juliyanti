@@ -22,18 +22,18 @@ class MainActivity : AppCompatActivity() {
 
         memberList = ArrayList()
 
-        memberList.add(Member(R.drawable.treasure1, "Hyunsuk Choi", "Leader, Main Rapper, Lead Dancer"))
-        memberList.add(Member(R.drawable.treasure2, "Park Jihonn", "Leader, Lead Vocal, Main Dancer"))
+        memberList.add(Member(R.drawable.treasure1, "Choi Hyunsuk", "Leader, Main Rapper, Lead Dancer"))
+        memberList.add(Member(R.drawable.treasure2, "Park Jihoon", "Leader, Lead Vocal, Main Dancer"))
         memberList.add(Member(R.drawable.treasure3, "Yoshi", "Lead Rapper, Lead Dancer"))
-        memberList.add(Member(R.drawable.treasure4, "Junkyu", "Lead Vocal, Visual"))
+        memberList.add(Member(R.drawable.treasure4, "Kim Junkyu", "Lead Vocal, Visual"))
         memberList.add(Member(R.drawable.treasure5, "Mashiho", "Visual, Lead Vocal, Main Dancer"))
-        memberList.add(Member(R.drawable.treasure6, "Jaehyuk", "Sub Rapper, Sub Vocal"))
+        memberList.add(Member(R.drawable.treasure6, "Yoon Jaehyuk", "Sub Rapper, Sub Vocal"))
         memberList.add(Member(R.drawable.treasure7, "Asahi", "Lead Vocal, Visual"))
-        memberList.add(Member(R.drawable.treasure8, "Yedam", "Main Vocal"))
-        memberList.add(Member(R.drawable.treasure9, "Doyoung", "Main Dancer, Sub Vocal"))
+        memberList.add(Member(R.drawable.treasure8, "Bang Yedam", "Main Vocal"))
+        memberList.add(Member(R.drawable.treasure9, "Kim Doyoung", "Main Dancer, Sub Vocal"))
         memberList.add(Member(R.drawable.treasure10, "Haruto", "Lead Rapper, Visual"))
-        memberList.add(Member(R.drawable.treasure11, "Jeongwoo", "Main Vocal"))
-        memberList.add(Member(R.drawable.treasure12, "Junghwan", "Sub Vocal, Lead Dancer, Maknae"))
+        memberList.add(Member(R.drawable.treasure11, "Park Jeongwoo", "Main Vocal"))
+        memberList.add(Member(R.drawable.treasure12, "So Junghwan", "Sub Vocal, Lead Dancer, Maknae"))
 
         memberAdapter = MemberAdapter(memberList)
         recyclerView.adapter = memberAdapter

@@ -6,11 +6,15 @@
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@drawable/tupen22"
-        android:label="@string/app_name"
+        android:icon="@drawable/tuprak34"
+        android:label="Data Mahasiswa"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Tugaspendahuluan22"
+        android:theme="@style/MyTheme"
         tools:targetApi="31">
+        <activity
+            android:name=".EditorActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize"/>
         <activity
             android:name=".MainActivity"
             android:exported="true">
