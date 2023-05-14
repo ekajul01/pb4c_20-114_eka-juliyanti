@@ -90,7 +90,6 @@ class EditorActivity : AppCompatActivity() {
                         ).show()
                     } else {
                         // NIM masih tersedia alias belum terdaftar
-                        // tambah data
                         database.userDao().insertAll(
                             User(
                                 nim.text.toString(),

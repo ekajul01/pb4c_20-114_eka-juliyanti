@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_kamera"
+        android:icon="@drawable/camera"
+        android:title="@string/menu_kamera"
+        app:showAsAction="always">
+    </item>
+    <item
+        android:id="@+id/menu_cari"
+        android:icon="@drawable/search"
+        android:title="@string/menu_cari"
+        app:showAsAction="always">
+    </item>
+    <item
+        android:id="@+id/grup_baru"
+        android:title="Grup Baru"
+        app:showAsAction="never"
+        android:background="@color/grey">
+    </item>
+    <item
+        android:id="@+id/siaran_baru"
+        android:title="Siaran Baru"
+        app:showAsAction="never"
+        android:background="@color/grey">
+    </item>
+    <item
+        android:id="@+id/perangkat"
+        android:title="Perangkat Tertaut"
+        app:showAsAction="never"
+        android:background="@color/grey">
+    </item>
+    <item
+        android:id="@+id/pesan"
+        android:title="Pesan Berbintang"
+        app:showAsAction="never"
+        android:background="@color/grey">
+    </item>
+    <item
+        android:id="@+id/privasi"
+        android:title="Privasi Status"
+        app:showAsAction="never"
+        android:background="@color/grey">
+    </item>
+    <item
+        android:id="@+id/bersih"
+        android:title="Bersihkan log panggilan"
+        app:showAsAction="never"
+        android:background="@color/grey">
+    </item>
+
+    <item
+        android:id="@+id/setelan"
+        android:title="Setelan"
+        app:showAsAction="never"
+        android:background="@color/grey">
+    </item>
+</menu>

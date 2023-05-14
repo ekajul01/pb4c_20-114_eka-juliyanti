@@ -3,6 +3,8 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.*
+import androidx.core.view.isNotEmpty
+
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -28,10 +30,15 @@ class MainActivity : AppCompatActivity() {
             } else {
                 gender = " "
             }
-            val tampil = "Nama: "+editTextNama.getText()+
-                    ", Gender: " +gender+
-                    " telah berhasil disimpan"
-            Toast.makeText(this@MainActivity, tampil, Toast.LENGTH_SHORT).show()
+            if(editTextNama.getText().isNotEmpty() && radioGroup.isNotEmpty()){
+                val tampil = "Nama: "+editTextNama.getText()+
+                        ", Gender: " +gender+
+                        " telah berhasil disimpan"
+                Toast.makeText(this@MainActivity, tampil, Toast.LENGTH_SHORT).show()
+            }else{
+                val tampil = "Nama dan Gender wajib diisi"
+                Toast.makeText(this@MainActivity, tampil, Toast.LENGTH_SHORT).show()
+            }
         }
 
         imgButtonCancel.setOnClickListener{

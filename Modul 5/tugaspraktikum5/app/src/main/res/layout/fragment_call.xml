@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="10dp"
+    android:paddingHorizontal="10dp"
+    tools:context=".MainActivity"
+    android:background="@color/black">
+
+    <LinearLayout
+        android:id="@+id/layoutcall"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/link">
+        </de.hdodenhof.circleimageview.CircleImageView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="Create call link"
+                android:textColor="#fff"
+                android:textSize="16dp"
+                android:textStyle="bold">
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Share a link for your WhatsApp call"
+                android:textSize="14dp"
+                android:textColor="@color/grey2">
+            </TextView>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/textview2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Recent"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        android:textColor="@color/grey2"
+        app:layout_constraintStart_toStartOf="@+id/layoutcall"
+        app:layout_constraintTop_toBottomOf="@+id/layoutcall">
+    </TextView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_call"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingBottom="100dp"
+        app:layout_constraintStart_toStartOf="@+id/textview2"
+        app:layout_constraintTop_toBottomOf="@+id/textview2"
+        tools:listitem="@layout/list_call">
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <LinearLayout
+        android:id="@+id/enkripsi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="42dp"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintStart_toStartOf="@+id/recycler_view_call"
+        app:layout_constraintTop_toBottomOf="@+id/recycler_view_call">
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:src="@drawable/lock"
+            android:layout_gravity="center">
+        </ImageView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center"
+            android:text="Panggilan pribadi Anda"
+            android:textSize="10dp"
+            android:textColor="@color/grey2"
+            android:layout_marginRight="5dp">
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:text="terenskripsi secara end-to-end"
+            android:textColor="#00a884"
+            android:textSize="10dp"
+            tools:ignore="RtlCompat"></TextView>
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="16dp"
+        app:backgroundTint="#00a884"
+        android:src="@drawable/calladd"
+        app:tint="#fff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+</androidx.constraintlayout.widget.ConstraintLayout>
