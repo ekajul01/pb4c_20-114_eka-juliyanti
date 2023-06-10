@@ -43,10 +43,10 @@
 
         <RadioButton
             android:id="@+id/rbWanita"
+            android:text="Wanita"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Wanita"/>
+            android:layout_weight="1"/>
 
         <RadioButton
             android:id="@+id/rbPria"

@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         supportActionBar!!.setBackgroundDrawable(ColorDrawable(Color.rgb(45,61,71)))
-        replaceFragment(ChatFragment())
+        replaceFragment(ChatFragment()) //menginisialisasi dan menampilkan home fragment
 
         binding.bottomNavigationView.setOnItemSelectedListener {
 
@@ -38,9 +38,9 @@ class MainActivity : AppCompatActivity() {
     private fun replaceFragment(fragment : Fragment){
 
         val fragmentManager = supportFragmentManager
-        val fragmentTransaction = fragmentManager.beginTransaction()
+        val fragmentTransaction = fragmentManager.beginTransaction() //melakukan perubahan pada fragment
         fragmentTransaction.replace(R.id.frame_layout,fragment)
-        fragmentTransaction.commit()
+        fragmentTransaction.commit() //menerapkan perubahan fragment
 
     }
 }
